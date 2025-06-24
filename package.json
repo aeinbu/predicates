@@ -24,6 +24,9 @@
     "url": "git+https://github.com/aeinbu/predicates.git"
   },
   "keywords": [
+    "isDeepEqual",
+    "areAllEqual",
+    "areAllUnique"
   ],
   "author": "Arjan Einbu <arjan@einbu.no>",
   "license": "MIT",
