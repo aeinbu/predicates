@@ -11,12 +11,20 @@ describe("Comparing simple types", () => {
         expect(res).toBe(true)
     })
 
+    test("Array of one element, should return true", () => {
+        const array = [1]
+
+        const res = array.every(areAllUnique())
+
+        expect(res).toBe(true)
+    })
+
     test("Some numbers are equal, should return false", () => {
         const array = [1, 2, 1]
 
         const res = array.every(areAllUnique())
 
-        expect(res).toBe(true)
+        expect(res).toBe(false)
     })
 
     test("All numbers are unique, should return true", () => {
@@ -24,7 +32,7 @@ describe("Comparing simple types", () => {
 
         const res = array.every(areAllUnique())
 
-        expect(res).toBe(false)
+        expect(res).toBe(true)
     })
 
 })

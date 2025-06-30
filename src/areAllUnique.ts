@@ -8,7 +8,7 @@ export const areAllUnique = <TIn>(
     ix: number,
     arr: TIn[]
 ) => {
-        for (let i = 1; i < ix; i++) {
+        for (let i = 1; i < arr.length; i++) {
             if (ix === i) {
                 break;
             }

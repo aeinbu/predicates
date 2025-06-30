@@ -4,7 +4,7 @@
  * @param left
  * @param right
  */
-export function isDeepEqual<T>(left: T , right: T) {
+export function isDeepEqual(left: any , right: any) {
     if(left === right) return true
     
     if (typeof left !== typeof right)

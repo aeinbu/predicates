@@ -189,10 +189,10 @@ describe("Array comparisson", () => {
 describe("Other special cases...", () => {
 
     test("Comparing object with different prototypes returns false", () => {
-        const left = Object.create({b:10})
-        left.a = 10
+        const left = Object.create({a: 10})
+
         const right = Object.create({})
-        left.a = 10
+        right.a = 10
 
         const res = isDeepEqual(left, right)
 
